@@ -3,10 +3,6 @@ body {
   background-image: linear-gradient(135deg, #BEADFA, #27077f);
 }
 
-h1 {
-  font-size: 6rem;
-}
-
 .bg-body-tertiary {
   background-color: transparent !important;
   border: 10px solid black !important;
