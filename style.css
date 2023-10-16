@@ -1,6 +1,8 @@
 body {
   min-height: 100vh;
   background-image: linear-gradient(135deg, #BEADFA, #27077f);
+  background-size: 1000%;
+  animation: background 1s 0.4s ease forwards;
 }
 
 .bg-body-tertiary {
@@ -13,6 +15,11 @@ body {
 .card {
   opacity: 0;
   animation: slideUpFade 1s 0.5s ease forwards;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.4);
 }
 
 @keyframes slideUpFade {
@@ -29,9 +36,9 @@ body {
 
 @keyframes background {
   0% {
-    background-image: linear-gradient(135deg, #BEADFA, #BEADFA);
+    background-size: 1000%;
   }
   100% {
-    background-image: linear-gradient(135deg, #BEADFA, #27077f);
+    background-size: 100%;
   }
 }
