@@ -5,6 +5,10 @@ body {
   animation: background 1s 0.4s ease forwards;
 }
 
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
 .bg-body-tertiary {
   background-color: transparent !important;
   border: 10px solid black !important;
@@ -13,24 +17,30 @@ body {
 }
 
 .card {
-  opacity: 0;
-  animation: slideUpFade 1s 0.5s ease forwards;
-  transition: all 0.2s ease;
+  transform: scale(1);
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.4);
+  transform: scale(1.05);
+}
+
+.row {
+  opacity: 0;
+  animation: slideUpFade 1s 0.5s ease forwards;
 }
 
 @keyframes slideUpFade {
   0% {
     transform: translateY(30px);
     opacity: 0;
+    transform: scale(1);
   }
 
   100% {
     transform: translateY(0);
     opacity: 1;
+    transform: scale(1);
   }
 }
 
