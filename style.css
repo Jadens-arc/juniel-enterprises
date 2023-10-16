@@ -10,6 +10,23 @@ body {
   color: black !important;
 }
 
+.card {
+  opacity: 0;
+  animation: slideUpFade 1s 0.5s ease forwards;
+}
+
+@keyframes slideUpFade {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes background {
   0% {
     background-image: linear-gradient(135deg, #BEADFA, #BEADFA);
