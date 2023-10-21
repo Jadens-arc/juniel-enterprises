@@ -16,12 +16,12 @@ h1 {
   color: black !important;
 }
 
-.card {
+.bounce {
   transform: scale(1);
   transition: all 0.3s ease;
 }
 
-.card:hover {
+.bounce:hover {
   transform: scale(1.05);
 }
 
