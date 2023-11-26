@@ -50,3 +50,23 @@ h1 {
     background-size: 100%;
   }
 }
+
+.sticker {
+  /* position: -webkit-sticky; */
+  max-width: 40vw;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.sticker img {
+  max-width: 40vw;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-top-left-radius: 7px;
+}
