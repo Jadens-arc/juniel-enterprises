@@ -8,7 +8,7 @@ All pages are stored in the `content` folder
 
 ### Making a new page
 
-To create a new page simply create a new file in this folder
+To create a new page, simply create a new file in this folder
 
 Example:
 
@@ -23,7 +23,7 @@ This will automatically generate a card on the homepage
 
 ### Customizing the homescreen card
 
-At the top of the new page you must specify a few attributes of this page to describe how it will look as a card on the homescreen (must be surrounded by plus signs, copy and paste if necessary).
+At the top of the new page, you must specify a few attributes of this page to describe how it will look as a card on the homescreen (must be surrounded by plus signs, copy and paste if necessary).
 
 ```hugo
 +++
@@ -36,7 +36,7 @@ description = 'The greatest new page this world has ever seen'
 
 #### Plain Text
 
-Beneath the bottom plus signs you can start writing content for your page
+Beneath the bottom plus signs, you can start writing content for your page
 
 ```hugo
 +++
@@ -53,15 +53,15 @@ This will just be simple plain text on the page
 
 #### Rowcards (the things with images)
 
-If you're wondering how to get those fancy cards with the images next to them this is the section for you
+If you're wondering how to get those fancy cards with the images next to them, this is the section for you
 
-You declare whats called a row card
+You declare what's called a row card
 
 ```hugo
 {{< rowcard >}}
 ```
 
-it follows the following format
+It follows the following format
 
 | Attribute   | meaning                                                                                                                    |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -91,4 +91,4 @@ Thank you for visiting. Explore, enjoy, and let us know how this one-of-a-kind p
 
 ### A Note on Images
 
-For rowcards when you're defining the url for the image. If it's an external image from a different website just put the full url like "https://jadenarceneaux/logo.png". If you'd like to upload you're own image simply upload the image to the `static` folder and set the url to forwardslash + the name of your image (e.g "/super-cool-image.png")
+For rowcards, when you're defining the url for the image, if it's an external image from a different website just put the full url like "https://jadenarceneaux.com/logo.png". If you'd like to upload your own image, simply upload the image to the `static` folder and set the url to forward slash + the name of your image (e.g., "/super-cool-image.png")
