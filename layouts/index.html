@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+  {{ partial "head.html" . }}
+  <body>
+    <a href="https://www.uschamber.com" class="sticker">
+      <img
+        alt="U.S. Chamber of Commerce Member"
+        src="https://www.uschamber.com/assets/images/USCC_Webstickers_2022_234x75.png"
+        title="U.S. Chamber of Commerce Member"
+      />
+    </a>
+    <div class="container">
+      <div class="container-md my-5 header">
+        <div class="p-1 text-center rounded-3">
+          <img class="w-100" src="/juniel-enterprises.png" alt="" srcset="" />
+        </div>
+      </div>
+
+      <div
+        class="d-flex align-items-center justify-content-center w-100 flex-column"
+      >
+        <div class="fade-slide row w-100 justify-content-center mb-5">
+          {{ range .Pages }}
+          <div
+            class="hoverable card col-sm-3 mx-3 my-3"
+            style="cursor: pointer"
+            {{ if isset .Params "link" }}
+              onclick="window.location = '{{ .Params.link }}'"
+            {{ else }}
+              onclick="window.location = '{{ .RelPermalink }}'"
+            {{ end }}
+          >
+            <div class="card-body">
+              <h3>{{ .Title }}</h3>
+              <p>{{ .Description }}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+</html>

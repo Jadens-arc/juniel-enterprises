@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Juniel Enterprises'
+[params]
+customcss = ["css/custom.css"]
+subtitle = "I Teach, I Educate, I School"
+description = "I Teach, I Educate, I School"

@@ -16,16 +16,16 @@ h1 {
   color: black !important;
 }
 
-.card {
+.hoverable {
   transform: scale(1);
   transition: all 0.3s ease;
 }
 
-.card:hover {
+.hoverable:hover {
   transform: scale(1.05);
 }
 
-.row {
+.fade-slide {
   opacity: 0;
   animation: slideUpFade 2s 1.1s ease forwards;
 }
@@ -69,4 +69,3 @@ h1 {
   border-left: 2px solid white;
   border-top: 2px solid white;
   border-top-left-radius: 7px;
-}

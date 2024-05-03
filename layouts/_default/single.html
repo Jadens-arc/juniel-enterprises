@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="container pb-5 mb-5">
+  <div class="title my-4">
+    {{ if .Title }}
+    <h1 class="title">{{ .Title }}</h1>
+    {{ end}}
+  </div>
+  <section class="body">{{ .Content }}</section>
+</div>
+{{ end }}
