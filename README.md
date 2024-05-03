@@ -32,6 +32,22 @@ description = 'The greatest new page this world has ever seen'
 +++
 ```
 
+There is also an optional `link` attribute
+
+When present, rather than loading the page on JunielEnterprises.com it will redirect to the URL specified with link. This is used in `TravelDRx.md` to link out to the inteletravel website.
+
+Here's how TravelRx uses it...
+
+```hugo
++++
+title = 'TravelDRx'
+
+description = 'An independent travel hub focusing on specialized travel for individuals, businesses, and organizations. These travel arrangements can be for educational ventures, professional conferences, medical and health treatments, sporting events, and group retreats.'
+
+link = 'https://pamelajuniel.inteletravel.com/booktravel.cfm'
++++
+```
+
 ### Adding content to a page
 
 #### Plain Text
