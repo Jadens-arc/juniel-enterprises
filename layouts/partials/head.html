@@ -31,17 +31,17 @@
   />
   <meta name="twitter:title" content="Juniel Enterprises" />
 	{{ with .OutputFormats.Get "rss" -}}
-	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{ end -}}
 
 	{{ $style := resources.Get "css/main.css" | fingerprint }}
-	<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.Permalink }}" />
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.RelPermalink }}" />
 
 	<!-- Custom CSS style get applied last -->
 	{{- if isset .Site.Params "customcss" }}
 		{{ range .Site.Params.customCSS }}
 		{{ $customstyle := resources.Get . | fingerprint }}
-		<link rel="stylesheet" type="text/css" href="{{ $customstyle.Permalink }}">
+		<link rel="stylesheet" type="text/css" href="{{ $customstyle.RelPermalink }}">
 		{{ end }}
 	{{- end -}}
 	{{- range .Site.Params.customJS }}
