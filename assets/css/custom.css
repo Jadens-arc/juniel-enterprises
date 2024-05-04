@@ -27,7 +27,7 @@ h1 {
 
 .fade-slide {
   opacity: 0;
-  animation: slideUpFade 2s 1.1s ease forwards;
+  animation: slideUpFade 2s 0.2s ease forwards;
 }
 
 @keyframes slideUpFade {
